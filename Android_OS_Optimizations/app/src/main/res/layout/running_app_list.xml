@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip">
+        <TextView android:id="@+id/tv_App_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:text="Running App"
+          >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_Remain_Battery"
+            android:layout_marginLeft="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="hh"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_App_Title"
+         />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="Optimize"
+            android:id="@+id/btn_Optimize"
+            android:textSize="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <Button
+            android:id="@+id/btn_Refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_toLeftOf="@id/btn_Optimize"
+            android:textSize="12dp"
+            android:layout_centerVertical="true"
+            android:text="Refresh"/>
+
+    </RelativeLayout>
+
+
+
+
+    <ListView android:id="@+id/lview_App"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

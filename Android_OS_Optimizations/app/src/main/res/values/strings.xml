@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android_Project2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_app_list">app_list</string>
+    <string name="title_activity_battery_state">BatteryState</string>
+    <string name="title_activity_wake_lock_list">wakeLockList</string>
+</resources>

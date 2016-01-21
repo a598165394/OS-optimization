@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip">
+
+    <ImageView android:id="@+id/imv_ap_icon"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+       >
+
+    </ImageView>
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_ap_name_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="AppName: ">
+        </TextView>
+        <TextView android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/tv_ap_name_prefix"
+            android:layout_height="35dip"
+            android:layout_marginLeft="3dip"
+            android:text="Name"
+            android:textColor="#000000">
+        </TextView>
+        <TextView android:id="@+id/tv_pkg_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@id/tv_ap_name_prefix"
+            android:text="Memory: ">
+
+        </TextView>
+        <TextView android:id="@+id/tv_pkg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@id/tv_app_name"
+            android:layout_alignLeft="@id/tv_app_name"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <TextView android:id="@+id/tv_pid_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pkg_prefix"
+            android:textColor="#000000"
+            android:text="PID: ">
+
+        </TextView>
+        <TextView android:id="@+id/tv_pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pkg_name"
+            android:layout_alignLeft="@id/tv_pkg_name"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <TextView android:id="@+id/tv_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pid"
+            android:layout_alignLeft="@id/tv_pid"
+            android:textColor="#000000">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/tv_percent"
+
+            android:layout_below="@id/tv_app_name"
+            android:layout_alignParentRight="true"
+            android:padding="1dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_cpuTime"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_percent"
+            android:padding="1dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
